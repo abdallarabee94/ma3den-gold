@@ -49,7 +49,7 @@ function App() {
     const handler = (event) => { event.preventDefault(); setDeferredPrompt(event); };
     window.addEventListener('beforeinstallprompt', handler);
     window.addEventListener('appinstalled', () => setInstalled(true));
-    if ('serviceWorker' in navigator) navigator.serviceWorker.register('/sw.js').catch(() => {});
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register(`${import.meta.env.BASE_URL}sw.js`).catch(() => {});
     return () => window.removeEventListener('beforeinstallprompt', handler);
   }, []);
 

@@ -4,11 +4,12 @@
   "description": "أسعار الذهب والفضة والدولار محليًا وعالميًا",
   "lang": "ar",
   "dir": "rtl",
-  "start_url": "/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "background_color": "#F7F3E8",
   "theme_color": "#176B4D",
   "icons": [
-    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+    { "src": "./icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }
